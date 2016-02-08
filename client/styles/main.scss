@@ -1,0 +1,142 @@
+$o-grid-is-silent: false;
+$o-buttons-is-silent: false;
+$o-assets-global-path: 'https://build.origami.ft.com/files/';
+
+@import 'o-fonts/main';
+@import 'o-colors/main';
+@import 'o-grid/main';
+@import 'o-buttons/main';
+
+
+@import 'functions';
+@import 'var';
+@import 'fonts';
+
+@import 'header';
+@import 'footer';
+
+
+body {
+  @include oColorsFor(page, background);
+
+  margin: 0;
+  border: 0;
+  font-family: font(MetricWeb);
+}
+h1 {
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  font-family: MillerDisplay,Georgia,serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.15;
+  margin-top: 4px;
+}
+
+#graphsubhead {
+  font-family: MetricWeb;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.4em;
+  line-height: 1em;
+  color: #6a6d68; 
+
+}
+.instructions {
+  font-family: MetricWeb;
+  text-align: center;
+  font-size: 1.2em;
+  color: #6a6d68; 
+  margin-top: 5px;
+
+}
+
+.buttonHolder{
+  margin: 0 auto;
+  display: block;
+  width: 10em;
+}
+
+.o-buttons{
+  font-family: MetricWeb;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin-top: 5px;
+}
+
+#infoHead {
+  font-family: MetricWeb;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #ffffff; 
+  margin-top: 10px;
+  background-color: #a7a59b;
+  border-radius: 7px;
+  padding-left: 10px; 
+}
+
+#mainBar{
+  margin-top: 10px;
+}
+
+.bartext {
+  font-family: MetricWeb;
+  font-size: 0.9em;
+  fill:  #ffffff;
+}
+
+rect:hover {
+        fill: #E8A7A6;
+}
+
+.axis path,
+      .axis line {
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+      }
+      
+      .axis text {
+        font-family: MetricWeb;;
+        font-size: 0.9em;
+        fill: #6a6d68;
+      }
+
+      .y.axis path,
+      .y.axis line {
+        opacity: 0;
+      }
+
+#globeDiv {
+  margin-top: 25px;
+}
+
+.source {
+  font-family: "MetricWeb";
+  font-size: 0.7em;
+  line-height: 1.1em;
+  color: #74736c;
+  margin-top: 3px;
+  text-decoration: none;
+  a {
+    color: #74736c;
+    text-decoration: none;  
+  }
+}
+
+.credits {
+  font-family: "MetricWeb";
+  font-size: 0.7em;
+  line-height: 1.1em;
+  color: #74736c;
+  a {
+    color: #74736c;
+    text-decoration: none;  
+  }
+}
+
+.o-footer {
+    margin-top: 15px;
+  }
+

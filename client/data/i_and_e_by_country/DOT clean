@@ -1,0 +1,29 @@
+
+csvgrep -c 1 -m "Exports" DOTsimpler.csv | csvcut -c 3,2,4- >exportsSimple.csv
+csvgrep -c 1 -m "Imports" DOTsimpler.csv | csvcut -c 3,2,4- >importsSimple.csv
+
+#truncate into seperate files determined by first 
+
+file="importsSimple.csv"
+
+echo "year,partner,value" >importsTemp.csv
+cat
+
+
+for country in $(csvcut -c 1 importsSimple.csv | sort | uniq | grep -e "[0-9]")
+do
+echo parsing country: $country
+csvgrep -c 1 -m $country importsSimple.csv | csvcut -c 2- | csvsort -r -c 3 | csvsort -c 1 >i_$country.csv
+done
+
+
+for country in $(csvcut -c 1 exportsSimple.csv | sort | uniq | grep -e "[0-9]")
+do
+echo parsing country: $country
+csvgrep -c 1 -m $country exportsSimple.csv | csvcut -c 2- | csvsort -r -c 3 | csvsort -c 1 >e_$country.csv
+done
+
+
+
+
+ls "[e|i].*\.csv"

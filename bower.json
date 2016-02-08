@@ -1,0 +1,20 @@
+{
+  "name": "origami-product-boilerplate",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "o-colors": "~2.4.7",
+    "o-fonts": "~1.6.4",
+    "o-footer": "~3.0.4",
+    "o-header": "~3.0.6",
+    "o-hoverable": "~1.1.0",
+     "o-buttons": "~2.0.4",
+    "OrbitControls": "https://github.com/mrdoob/three.js/blob/master/examples/js/controls/OrbitControls.js",
+    "three": "https://github.com/mrdoob/three.js",
+    "three.js": "~0.71.0",
+    "tween.js": "tweenjs#~16.3.1"
+  },
+  "resolutions": {
+    "o-colors": ">=2.5.0 <4"
+  }
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-GB" class="core">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+  
+    <link rel="shortcut icon" href="//im.ft-static.com/m/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="//im.ft-static.com/m/icons/apple-touch-icon.png">
+
+    <title></title>
+    <!-- <meta name="description" content="ENTER A DESCRIPTION HERE"> -->
+    
+    <!-- smoosh -->
+    <!-- build:js scripts/top.js -->
+    <script src="scripts/top.js"></script>
+    <!-- endbuild -->
+    <!-- endsmoosh -->
+
+    <!-- smoosh -->
+    <!-- build:css scripts/top.css -->
+    <link rel="stylesheet" href="styles/top.css">
+    <!-- endbuild -->
+    <!-- endsmoosh -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <header class="o-header" data-o-header-default-panel="">
+      <div class="o-header__container o-header__container--primary">
+        <div class="o-header__primary">
+          <div class="o-header__primary__center">
+            <div class="o-header__logo">
+              <a href="//www.ft.com/">
+                <img src="//image.webservices.ft.com/v1/images/raw/fticon:brand-ft-masthead?source=ig" alt="Financial Times">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <main id='main'>
+    <h1 id="mainTitle"></h1>
+    <p id="graphsubhead"></p>
+    <div class="instructions">Click and drag the globe to rotate, double click on countries to load trade flows. Mousing over the bars will rotate the globe to that country and highlight it</div>
+    <div class="buttonHolder">
+      <button class="o-buttons" id="exports">Exports</button>
+      <button class="o-buttons"id="imports">Imports</button>
+    </div>
+    <div class="o-grid-row">
+         <div data-o-grid-colspan="6 S6 M6 L6" id="infoPanel">
+          <div id="infoHead"></div>
+         </div>
+        <div data-o-grid-colspan="6 S6 M6 L6" id="globeDiv"></div>
+        <div class="source"></div>
+        <div class="credits"></div>
+    </div>
+    </main>
+    <footer class="o-footer">
+      <!--
+      <div class="o-footer__row o-footer__link-lists">
+        <nav class="o-footer__col o-footer__link-list">
+          <h3 class="o-footer__title">Services</h3>
+          <ul>
+            <li class="o-footer__link"><a href="http://www.ft.com/corporate">Corporate subscriptions</a></li>
+            <li class="o-footer__link"><a href="http://www.ft.com/syndication">Syndication</a></li>
+            <li class="o-footer__link"><a href="https://www.ft-live.com/">Conferences</a></li>
+          </ul>
+        </nav>
+        <nav class="o-footer__col o-footer__link-list">
+          <ul>
+            <li class="o-footer__link"><a href="http://www.exec-appointments.com/">Jobs</a></li>
+            <li class="o-footer__link"><a href="http://www.non-execs.com/">Non-exec directors' club</a></li>
+          </ul>
+        </nav>
+        <nav class="o-footer__col o-footer__link-list">
+          <h3 class="o-footer__title">Tools</h3>
+          <ul>
+            <li class="o-footer__link"><a href="http://portfolio.ft.com/">Portfolio</a></li>
+            <li class="o-footer__link"><a href="http://lexicon.ft.com/">Lexicon</a></li>
+            <li class="o-footer__link"><a href="http://www.ft.com/topics">Topics</a></li>
+            <li class="o-footer__link"><a href="http://markets.ft.com/alerts/keyword.asp">Alerts Hub</a></li>
+            <li class="o-footer__link"><a href="http://nbe.ft.com/nbe/profile.cfm?segid=70121">Daily Briefings</a></li>
+          </ul>
+        </nav>
+        <nav class="o-footer__col o-footer__link-list">
+          <h3 class="o-footer__title">Support</h3>
+          <ul>
+            <li class="o-footer__link"><a href="http://www.ft.com/help">Help</a></li>
+            <li class="o-footer__link"><a href="http://www.ft.com/aboutus">About us</a></li>
+            <li class="o-footer__link"><a href="http://membership.ft.com/sitetour/">Site tour</a></li>
+          </ul>
+        </nav>
+        <nav class="o-footer__col o-footer__link-list">
+
+          <ul>
+            <li class="o-footer__link"><a href="http://aboutus.ft.com/contact-us">Contact us</a></li>
+            <li class="o-footer__link"><a href="//ft.com">Sitemap</a></li>
+          </ul>
+        </nav>
+        <nav class="o-footer__col o-footer__link-list">
+          <h3 class="o-footer__title">Legal &amp; Advertising</h3>
+          <ul>
+            <li class="o-footer__link"><a href="http://www.ft.com/advertising">Advertise with the FT</a></li>
+            <li class="o-footer__link"><a href="http://www.ft.com/servicestools/help/terms">Terms &amp; conditions</a></li>
+            <li class="o-footer__link"><a href="http://www.ft.com/servicestools/help/privacy">Cookie &amp; privacy policy</a></li>
+            <li class="o-footer__link"><a href="http://www.ft.com/servicestools/help/copyright">Copyright</a></li>
+          </ul>
+        </nav>
+      </div>
+      -->
+
+      <!-- <div class="o-footer__row o-footer__copyright">
+        <div class="o-footer__col o-footer__col--full-width">
+        <span>&#169; THE FINANCIAL TIMES LTD 2015.</span>
+        <span><abbr title="Financial Times">FT</abbr> and ‘Financial Times’ are trademarks of The Financial Times Ltd.</span>
+        </div>
+      </div> -->
+      <div class="o-footer__pearson">
+        <div class="o-footer__row">
+          <div class="o-footer__col o-footer__col--full-width">
+          <div class="o-footer__pearson-tagline" aria-label="Always Learning"></div>
+          <div class="o-footer__pearson-logo" aria-label="Pearson"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="http://bertha.ig.ft.com/view/publish/js/1JqXqvIZeKl0XeaOAbSGtj2wdRkjfWEf6bYg4ptUymjY/basic,exports,imports?d=spreadsheet"></script>
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="bower_components/three.js/three.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="scripts/main.bundle.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
